@@ -50,9 +50,9 @@ function home() {
     const chicken = document.createElement('div');
     const produce = document.createElement('div');
 
-    const beefText = document.createElement('h3');
-    const chickenText = document.createElement('h3');
-    const produceText = document.createElement('h3');
+    const beefText = document.createElement('h4');
+    const chickenText = document.createElement('h4');
+    const produceText = document.createElement('h4');
 
     const beefImg = document.createElement('img');
     const chickenImg = document.createElement('img');
@@ -82,14 +82,10 @@ function home() {
     chicken.id = "card";
     produce.id = "card";
 
-
-
     content.appendChild(grid);
     grid.appendChild(beef);
     grid.appendChild(chicken);
     grid.appendChild(produce);
-
-
 }
 
 init();
