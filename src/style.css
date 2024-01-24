@@ -16,8 +16,42 @@ a {
 #header {
   margin: 40px;
   border: 1px solid black;
+  text-align: center;
 }
 
 #title {
   text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  text-align: center;
+  align-items: center;
+}
+
+#card {
+  /* border: 1px solid black; */
+  padding: 0.5em;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+
+#chickenImage {
+  width: 7em;
+  margin-bottom: 1em;
+}
+
+#cowImage {
+  width: 8em;
+}
+
+#appleImage {
+  width: 7em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  margin: 0;
 }
