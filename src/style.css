@@ -1,0 +1,23 @@
+body {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  margin: 1em;
+}
+
+#container {
+  border: 1px solid black;
+}
+
+#header {
+  margin: 40px;
+  border: 1px solid black;
+}
+
+#title {
+  text-align: center;
+}
