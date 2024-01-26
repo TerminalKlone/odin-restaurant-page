@@ -93,6 +93,7 @@ function handleMenuClick() {
     const menuItemArray = [];
     addMenuItems(menuItemArray);
     console.log(menuItemArray)
+    console.log(menuItemArray[0].name)
 
     // loop through each item in the menu item class
 
@@ -111,13 +112,19 @@ class item {
 }
 
 function addMenuItems(array) {
-    const menuItem = new item("Starndard Burger", 15.99, "Beef Patty, cheese, burger sauce, pickles, lettuce")
+    const menuItem1 = new item("Starndard Burger", 15.99, "Beef Patty, cheese, burger sauce, pickles, lettuce")
     const menuItem2 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Burger Sauce, Pickles, Onion");
-    const menuItem3 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
-    const menuItem4 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
-    const menuItem5 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
-    const menuItem6 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
-    array.push(menuItem)
+    const menuItem3 = new item("Bacon Burger", 18.99, "Beef Patty, Cheese, Bacon, Burger Sauce, Lettuce, Tomato, Onion");
+    const menuItem4 = new item("Veggie Burger", 14.99, "Veggie Patty, Cheese, Burger Sauce, Pickles, Lettuce, Tomato, Onion");
+    const menuItem5 = new item("Chicken Burger", 16.99, "Southern Fried Chicken, Cheese, Spicy Mayo, Pickles, Lettuce, Taomato, Onion");
+    const menuItem6 = new item("Chicken Bacon Burger", 19.99, "Southern Fried Chicken, Bacon, Cheese, Spicy Mayo, Pickles, Lettuce, Taomato, Onion");
+    
+    array.push(menuItem1);
+    array.push(menuItem2);
+    array.push(menuItem3);
+    array.push(menuItem4);
+    array.push(menuItem5);
+    array.push(menuItem6);    
 }
 
 
