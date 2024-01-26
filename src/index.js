@@ -41,7 +41,7 @@ function header() {
     
     home.addEventListener('click', () => { handleHomeClick() });
     menu.addEventListener('click', () => { handleMenuClick(); });
-    about.addEventListener('click', () => { console.log( "ABOUT"); });
+    about.addEventListener('click', () => { handleAboutClick(); });
 
     header.appendChild(title);
     header.appendChild(nav);
@@ -129,8 +129,26 @@ function handleMenuClick() {
         grid.appendChild(burgerCard);
         content.appendChild(grid);
     }
+}
 
-    // display on the screen
+function handleAboutClick() {
+    removeContent();
+    
+    const content = document.getElementById('content');
+    const aboutDiv = document.createElement('div');
+
+    aboutDiv.id = "about-div";
+
+    const title = document.createElement('h2');
+    const info = document.createElement('p');
+
+    title.innerText = "Just good people! Making good burgers!"
+    info.innerText = "Welcome to Big Daddy Burgers, where size meets flavor in every bite! At Big Daddy Burgers, we believe that bigger is always better when it comes to crafting the perfect burger experience. Prepare to embark on a culinary adventure that takes your taste buds to new heights of satisfaction.";
+
+
+    aboutDiv.appendChild(title);
+    aboutDiv.appendChild(info);
+    content.appendChild(aboutDiv);
 }
 
 function burgerImageGetter(name) {
