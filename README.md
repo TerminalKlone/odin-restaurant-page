@@ -2,9 +2,7 @@
 Creating a restaurant page using javascript/npm/webpack
 
 ## Live Site
-<div align="center">
-<a href="https://terminalklone.github.io/odin-restaurant-page/">Live Preview
-</div>
+  [![Git Pages](https://img.shields.io/badge/Live%20Preview-121013?style=for-the-badge&logo=github&logoColor=white)](https://terminalklone.github.io/odin-restaurant-page/)
 
 ## Built With
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)   
