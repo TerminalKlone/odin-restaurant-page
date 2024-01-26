@@ -32,8 +32,8 @@ function header() {
     menu.innerText = "MENU";
     about.innerText = "ABOUT";
     
-    home.addEventListener('click', () => { console.log( "HOME" ); });
-    menu.addEventListener('click', () => { console.log( "MENU" ); });
+    home.addEventListener('click', () => { handleHomeClick() });
+    menu.addEventListener('click', () => { handleMenuClick(); });
     about.addEventListener('click', () => { console.log( "ABOUT"); });
 
     header.appendChild(title);
@@ -43,7 +43,8 @@ function header() {
     nav.appendChild(about);
 }
 
-function home() {
+function handleHomeClick() {
+    removeContent();
     const content = document.getElementById('content');
     const grid = document.createElement('div');
     const beef = document.createElement('div');
@@ -88,6 +89,50 @@ function home() {
     grid.appendChild(produce);
 }
 
+function handleMenuClick() {
+    const menuItemArray = [];
+    addMenuItems(menuItemArray);
+    console.log(menuItemArray)
+
+    // loop through each item in the menu item class
+
+    // display on the screen
+}
+
+class item {
+    
+    constructor(name, price, ingredients) {
+        this.name = name;
+        this.price = price;
+        this.ingredients = ingredients;
+    }
+
+
+}
+
+function addMenuItems(array) {
+    const menuItem = new item("Starndard Burger", 15.99, "Beef Patty, cheese, burger sauce, pickles, lettuce")
+    const menuItem2 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Burger Sauce, Pickles, Onion");
+    const menuItem3 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
+    const menuItem4 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
+    const menuItem5 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
+    const menuItem6 = new item("Double Beef Double Cheese", 19.99, "2 x Beef Patty, 2 x Cheese, Bun");
+    array.push(menuItem)
+}
+
+
+function removeContent() {
+    console.log("REMOVE CONTENT")
+    const content = document.getElementById('content');
+    
+    while (content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
+}
+
 init();
 header();
-home();
+handleHomeClick();
+
+
+// Create
