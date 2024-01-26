@@ -104,7 +104,7 @@ function handleMenuClick() {
     const content = document.getElementById('content');
     const grid = document.createElement('div');
 
-    grid.id = "grid";
+    grid.id = "menu-grid";
     // loop through each item in the menu item class
     for (const burger in menuItemArray) {
         const burgerCard = document.createElement('div');
@@ -136,15 +136,14 @@ function handleAboutClick() {
     
     const content = document.getElementById('content');
     const aboutDiv = document.createElement('div');
-
-    aboutDiv.id = "about-div";
-
     const title = document.createElement('h2');
     const info = document.createElement('p');
 
+    aboutDiv.id = "about-div";
+    info.id = "about-info";
+
     title.innerText = "Just good people! Making good burgers!"
     info.innerText = "Welcome to Big Daddy Burgers, where size meets flavor in every bite! At Big Daddy Burgers, we believe that bigger is always better when it comes to crafting the perfect burger experience. Prepare to embark on a culinary adventure that takes your taste buds to new heights of satisfaction.";
-
 
     aboutDiv.appendChild(title);
     aboutDiv.appendChild(info);
@@ -198,6 +197,3 @@ function removeContent() {
 init();
 header();
 handleHomeClick();
-
-
-// Create
