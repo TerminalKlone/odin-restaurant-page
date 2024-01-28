@@ -1,5 +1,5 @@
 # The Odin Project: Restaurant Page
-Creating a restaurant page using javascript/npm/webpack
+Creating a restaurant page with modular menus using javascript/npm/webpack
 
 ## Live Site
   [![Git Pages](https://img.shields.io/badge/Live%20Preview-121013?style=for-the-badge&logo=github&logoColor=white)](https://terminalklone.github.io/odin-restaurant-page/)
